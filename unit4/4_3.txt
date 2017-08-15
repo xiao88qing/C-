@@ -1,0 +1,25 @@
+// 4.3
+// 4.8
+//逻辑与是先算左侧运算对象，只有当左侧运算对象为真时，才对右侧运算对象求值
+//逻辑或是先运算左侧运算对象，只有当左侧运算对象为假时，才对右侧运算对象求值
+//相等性运算符满足左结合律，求值顺序从左到右
+
+// 4.9
+//首先判断左侧运算对象是否为真，cp指针不为空，所以做出E原酸对象为真，然后判断右侧的运算对象*cp，判断cp所指的内容是否为真
+
+
+#include <iostream>
+#include <string>
+using std::cin;
+using std::cout;
+using std::endl;
+
+int main (int argc,char *argv[])
+{
+	int num;
+	while((cin>>num) && (num ! = 42))
+	{
+		cout<<num<<endl;
+	}
+	return 0;
+]

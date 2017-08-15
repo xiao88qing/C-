@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
+
+
+int main (int argc,char *argv[])
+{
+	int a = 12/3*4+5*15+24%4/2;
+	int b = ((12/3)*4)+(5*15)+((24%4)/2);
+	if(a==b)
+	{
+		std::cout<<"正确"<<std::endl;
+	}
+	
+	
+	//4.5
+	int c = -30*3+21/5;
+	int d = -30+3*21/5;
+	int e = 30/3*21%5;
+	int f = -30/3*21%4;
+	
+	std::cout<<"c = "<<c<<"d = "<<d<<"e = "<<e<<"f = "<<f<<std::endl;
+	
+	
+	// 4.6
+	int num;
+	std::cin<<num;
+	if(0 == num%2)
+	{
+		std::cout<<"num is 偶数"<<std::endl;
+	}
+	else
+	{
+		cstd::out<<"num is 奇数"<<std::endl;
+	}
+	return 0;
+}
