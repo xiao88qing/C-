@@ -10,3 +10,4 @@ ps：这个可以自行修改的 这里家目录下的 .bashrc 中 alias cpro='c
 	那么 git ci 就是 git commit 的意思了
 	
 3. 关于 编译 g++ 的，需要带哪些参数的，就度娘吧
+4. windows : alias -p c-='cd /e/Proj/C-'
