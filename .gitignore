@@ -2,3 +2,6 @@
 *.usr
 *.suo
 *.out
+bin/
+obj/
+
