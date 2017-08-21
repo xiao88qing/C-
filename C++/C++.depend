@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1503332867 source:e:\proj\c-\c++\main.cpp
+	<iostream>
+	"Unit5.h"
+
+1503332124 e:\proj\c-\c++\include\unit5.h
+
+1503331312 source:e:\proj\c-\c++\src\unit5.cpp
+	"Unit5.h"
+	<vector>
+	<string>
+	<iostream>
+

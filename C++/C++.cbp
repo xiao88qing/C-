@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,21 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="s1">
+				<Option output="bin/s1/C++" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/s1/" />
+				<Option object_output="obj/s1/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +48,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="C++.cbp" />
+		<Unit filename="include/Unit5.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Unit5.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
