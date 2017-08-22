@@ -12,6 +12,9 @@ int main()
     //cUnit5->coutVowel_switchCase();
     //cUnit5->countSymbols();
     //cUnit5->countRepeatWords();
-    cout<<cUnit5->isSubString()<<endl;
+    //cout<<cUnit5->isSubString()<<endl;
+    //cUnit5->endWhenRepeat();
+    //cUnit5->endWhenRepeat_1();
+    cUnit5->divide_try();
     return 0;
 }

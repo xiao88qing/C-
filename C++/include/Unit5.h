@@ -25,6 +25,11 @@ class unit5
         //5.5.1
         void endWhenRepeat(); // 5.20
 
+        // 5.21
+        void endWhenRepeat_1();
+
+        // 5.23  5.24
+        void divide_try();
     protected:
 
     private:

@@ -2,12 +2,14 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <stdexcept>
 
 using  std::cin;
 using std::cout;
 using std::string;
 using std::endl;
 using std::vector;
+using std::runtime_error;
 
 unit5::unit5()
 {
@@ -157,11 +159,99 @@ bool unit5::isSubString()
 void unit5::endWhenRepeat()
 {
     string strBuf;
-    string strLast = " ";
-    while (cin>>strBuf)
+    string strLast;
+    int iNum = 0;
+    if (cin>>strLast)
     {
-        if()
-        strLast = strBuf;
+       while ((cin>>strBuf) && ("quit" != strBuf))
+       {
+           if(strLast == strBuf)
+           {
+               ++iNum;
+               break;
+           }
+           else
+           {
+               strLast = strBuf;
+           }
+       }
+    }
+
+    if (0 == iNum)
+    {
+        cout<<"没有重复"<<endl;
+    }
+    else
+    {
+        cout<<"重复单词："<<strBuf<<endl;
+    }
+}
+
+void unit5::endWhenRepeat_1()
+{
+    string strBuf;
+    string strLast;
+    int iNum = 0;
+    if (cin>>strLast)
+    {
+       while ((cin>>strBuf) && ("quit" != strBuf))
+       {
+           if((!islower(strLast[0])) && (strLast == strBuf))
+           {
+               ++iNum;
+               break;
+           }
+           else
+           {
+               strLast = strBuf;
+           }
+       }
+    }
+
+    if (0 == iNum)
+    {
+        cout<<"没有重复"<<endl;
+    }
+    else
+    {
+        cout<<"重复单词："<<strBuf<<endl;
+    }
+}
+
+void unit5::divide_try()
+{
+    int iNum1, iNum2;
+
+    while (cin>>iNum1>>iNum2)
+    {
+
+    try
+    {
+        if(0 == iNum2)
+        {
+            throw runtime_error("除数为0");
+        }
+        else
+        {
+            cout<<(iNum1/iNum2)<<endl;
+        }
+    }
+    catch (runtime_error err)
+    {
+        cout<<err.what()<<"\nTray again? Enter y or n"<<endl;
+        char ch;
+        cin>>ch;
+        if(!ch ||'n' == ch)
+        {
+            cout<<"退出"<<endl;
+            break;
+        }
+        else
+        {
+            cout<<"重新输入"<<endl;
+        }
+    }
+
     }
 }
 

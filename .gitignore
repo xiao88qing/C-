@@ -4,4 +4,6 @@
 *.out
 bin/
 obj/
+*.depend 
+*.layout  
 

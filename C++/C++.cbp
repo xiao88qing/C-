@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
@@ -50,8 +51,10 @@
 		</Compiler>
 		<Unit filename="C++.cbp" />
 		<Unit filename="include/Unit5.h" />
+		<Unit filename="include/Unit6.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Unit5.cpp" />
+		<Unit filename="src/Unit6.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
