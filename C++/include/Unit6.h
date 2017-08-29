@@ -45,6 +45,36 @@ class Unit6
         // 6.33
         void fun_Recursive(const vector<int> &iVec);
 
+        /*
+        // 6.36
+        string (&Func())[10];
+        //6.37
+        typedef string Str[10];
+        Str& Func();
+
+        auto Func()->string(&)[10];
+
+        string S1[10]={};
+        decltype(S1) &Func();
+        */
+
+        //6.39
+        /*
+        double *fun(double *);
+        int *fun(int *);
+        int calc(int, int);
+        int cacl(const int,const int);
+        */
+
+        //
+        int cal(int &,int &);
+        int cal(const int &,const int &);
+        int cal(int *,int *);
+        int cal(const int *,const int *);
+        int cal(char *,char *);
+        int cal(char * const,char * const);
+
+
     protected:
 
     private:

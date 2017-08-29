@@ -1,6 +1,8 @@
 #include <iostream>
+#include <cassert>
 #include "Unit6.h"
 using namespace std;
+#define NDEBUG
 
 
 Unit6::Unit6()
@@ -119,4 +121,16 @@ void Unit6::fun_Recursive(const vector<int> &iVec)
     }
     else {return;}
 }
+
+/*
+void Unit6::printFuc(int i)
+{
+    if(i%2)
+    {
+        cout<<"Error:"<<_ _FILE_ _
+        <<"in func:"<<_ _func_ _
+        <<"at line"<<_ _LINE_ _<<endl;
+    }
+}
+*/
 

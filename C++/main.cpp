@@ -4,6 +4,15 @@
 #include "Unit6.h"
 using namespace std;
 
+//6.38
+int odd[] = {1,3,5,7,9};
+int even[] = {0,2,4,6,8};
+
+decltype(odd) &arrPtr(int i)
+{
+    return (i%2) ? odd:even;
+}
+
 int main(int argc,char *argv[])
 {
     unit5 *cUnit5 = new unit5;
@@ -110,7 +119,19 @@ int main(int argc,char *argv[])
     */
 
     // 6.33
+    /*
     vector<int> ivec{1,2,3,4,5};
     cUnit6->fun_Recursive(ivec);
+    */
+
+    // 6.38
+    /*
+    for(auto ss:arrPtr(3))
+    {
+        cout<<ss<<":";
+    }
+    */
+
+
     return 0;
 }
